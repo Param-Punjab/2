@@ -55,12 +55,23 @@ void TraLRoRi(Node* root) {
   }
 }
 
-void Display() {
-
+void preorder(Node* root) {
+  cout << root->data << endl;
+  if (root->left != nullptr) {
+    Node* ptr_left = new Node;
+    ptr_left = root->left;
+    preorder(ptr_left);
+  }
+  if( root->right != nullptr ) {
+    Node* ptr_right = new Node; 
+    ptr_right = root->right;
+    preorder(ptr_right);
+  }
 }
 
 int main() {
   Node* root;
   root =  Create();
+  preorder(root);
   return 0;
 }
