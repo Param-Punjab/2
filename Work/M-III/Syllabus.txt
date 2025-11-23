@@ -1,0 +1,5 @@
+Unit - 1 Laplace Transforms
+Definiton and existence of Laplace Transforms, Laplace transforms of various standard functions, properties of laplace transforms, inverse Laplace transforms, transoform of derivatives and integrals, Transform of multiplication and division by t, convolution theorem, Laplace transform of unit step function. Application to solution of ordinary linear differential equations with constant coefficients, Applications to solve initial and boundary value problems.
+
+Unit - 2 Fourier Series
+Introduction, even and odd functions, periodic functions, Dirichlet's conditions for Fourier series, Eluer's formulae for Fourier series expansion, change of interval

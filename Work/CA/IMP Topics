@@ -1,0 +1,16 @@
+Unit 1:
+- IEEE 754 floating representation (4 marks)
+- Error detection and correction.  Parity check. Hamming code.
+
+Unit 2:
+- 4-bit adder-subtractor.
+- 4-bit arithmetic circuit (Very Imp)
+- Booth Multiplication algorithm 
+- 3 state Buffer
+- ALU
+
+Unit 3:
+- Computer Registers 
+- Types of control organization (V imp)
+- Instruction cycle 
+- Input Output and Interrupt (Flowchart + diagram)
