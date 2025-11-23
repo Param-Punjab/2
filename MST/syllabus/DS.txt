@@ -1,0 +1,10 @@
+MST - I
+
+
+MST - II 
+
+DS MST 2 syllabus
+Trees(full)(except red-black tree)
+Heap(full)
+Queue(full)
+Graph(basic terminology, representation, traversal, types of graphs, operations)
