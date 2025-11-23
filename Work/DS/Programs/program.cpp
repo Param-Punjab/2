@@ -30,6 +30,35 @@ Node* Create() {
   return ptr;
 }
 
+void TraLRoRi(Node* root) {
+  Node* ptr = new Node;
+  Node* ptr_2 = new Node;
+  if ( (*root).left != nullptr) {
+    ptr = (*root).left;
+    if ( (*ptr).left != nullptr ) {
+      ptr_2 == (*ptr).left;
+      if ((*ptr_2).left != nullptr) { TraLRoRi(ptr_2);
+      } else { cout << ptr_2->data << endl; }
+    }
+    cout << (*ptr).data << endl;
+    if ( (*ptr).right != nullptr ) {
+      Node* ptr_r = new Node;
+      ptr_r = (*ptr).right;
+      TraLRoRi(ptr_r);
+    } 
+    cout << (*root).data << endl;
+  } else if ( (*root).right != nullptr ) {
+    Node* root_ptr_r = new Node;
+    root_ptr_r = (*root).right;
+    if ( root_ptr_r->left != nullptr) { TraLRoRi(root_ptr_r); }
+    cout << root_ptr_r->data << endl;
+  }
+}
+
+void Display() {
+
+}
+
 int main() {
   Node* root;
   root =  Create();
