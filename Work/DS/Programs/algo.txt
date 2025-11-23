@@ -1,0 +1,15 @@
+    Node* Create():
+1.  input x [current Node input]
+2.  New Node* ptr [create anonymous node of Node]
+3. ptr->data = x [writing current node data]
+4. input y [asking for current node left child 0 = No, 1 = yes]
+    if ( y == 0):
+5.    ptr->left = null
+    else:
+6.    ptr->left = Create()
+7.  Input z [asking for current node right child 0 = no, 1 = yes]
+    if ( y == 0 ):
+8.    ptr->left = null
+    else:
+9.    ptr->left = create()
+10  return ptr [returning current node address]
