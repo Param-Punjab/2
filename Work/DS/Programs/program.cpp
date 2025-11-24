@@ -55,6 +55,13 @@ void TraLRoRi(Node* root) {
   }
 }
 
+void inorder(Node* root) {
+  if (root->data == 0) { cout << "THIS IS EMPTY" << endl; }
+  inorder(root->left);
+  cout << root->data << endl;
+  inorder(root->right);
+}
+
 void preorder(Node* root) {
   cout << root->data << endl;
   if (root->left != nullptr) {
@@ -69,9 +76,21 @@ void preorder(Node* root) {
   }
 }
 
+void postorder(Node* root) {
+  if (root->data == 0 ) {cout << "EMPTY" << endl;}
+  postorder(root->left);
+  postorder(root->right);
+  cout << root->data << endl;
+}
+
 int main() {
   Node* root;
   root =  Create();
+  cout << "Pre Order" << endl;
   preorder(root);
+  cout << "In Order" << endl;
+  inorder(root);
+  cout << "Post Order" << endl;
+  postorder(root);
   return 0;
 }
