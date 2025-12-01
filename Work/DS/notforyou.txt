@@ -1,0 +1,88 @@
+### 🟢 BLOCK 1: GRAPHS (The "Big Marks" Unit)
+**Time: 1:00 PM - 3:30 PM**
+*Why:* Unit 8 is massive. It covers Traversals, Shortest Paths, and MST. This is usually the 12-mark question in Part C.
+
+* **1:00 PM - 1:45 PM: BFS vs. DFS (Traversals)**
+    * **Logic:**
+        * **BFS (Breadth-First):** Go Wide. Uses a **Queue**. (Like throwing a stone in water -> ripples).
+        * **DFS (Depth-First):** Go Deep. Uses a **Stack** (internal recursion). (Like a maze solver).
+    * **Task:** Learn to draw the traversal order for a simple graph.
+    * **Visual:** 
+
+* **1:45 PM - 2:30 PM: Dijkstra’s Algorithm (Shortest Path)**
+    * **Logic:** Find the shortest path from Source to all other nodes.
+    * **Technique:** Don't code it. Learn the **Table Method** (Node, Distance, Path).
+    * **Task:** Solve one numerical problem on paper.
+
+* **2:30 PM - 3:30 PM: Minimum Spanning Tree (Prim’s & Kruskal’s)**
+    * **Kruskal’s:** Pick the smallest edge that doesn't form a cycle. (Super easy).
+    * **Prim’s:** Grow from a starting node, picking the smallest connected edge.
+    * **Task:** Draw one example for each.
+    * **Visual:** 
+
+---
+
+### 🥪 BREAK: 3:30 PM - 4:00 PM (Eat. Hydrate. No Reels.)
+
+---
+
+### 🟡 BLOCK 2: TREES (Terminology & Types)
+**Time: 4:00 PM - 6:30 PM**
+*Why:* Unit 6 has weird theory topics (Threaded, B-Trees) that you need to memorize definitions for.
+
+* **4:00 PM - 4:45 PM: Tree Traversals (Inorder, Preorder, Postorder)**
+    * **Task:** Draw a tree. Write the three traversals.
+    * **Trick:**
+        * Pre: **Root** First.
+        * In: **Root** Middle.
+        * Post: **Root** Last.
+
+* **4:45 PM - 5:30 PM: The "Special" Trees (Theory)**
+    * **Threaded Binary Tree:** Uses `NULL` pointers to point to ancestors (makes traversal faster).
+    * **B-Tree & B+ Tree:** Balanced "fat" trees used in Databases. (Just learn the definition and properties, don't stress on insertion).
+    * **AVL Tree:** You already know rotations. Just review the 4 types (LL, RR, LR, RL).
+    * **Visual:** 
+
+* **5:30 PM - 6:30 PM: Binary Search Tree (BST)**
+    * **Logic:** Left child < Root < Right child.
+    * **Task:** Practice inserting numbers: `10, 5, 20, 3, 7`. Draw the tree structure.
+
+---
+
+### 🔴 BLOCK 3: HEAPS & QUEUES (The "Easy" Math)
+**Time: 7:00 PM - 9:00 PM**
+*Why:* Unit 7 (Heaps) and Unit 5 (Queues) are your safety nets.
+
+* **7:00 PM - 7:45 PM: Heap Sort (Unit 7)**
+    * **Logic:** A **Max Heap** is a tree where Parent ≥ Children.
+    * **Algorithm:** 1. Build Max Heap. 2. Swap Root with Last. 3. Delete Last. 4. Repeat.
+    * **Visual:** 
+    * **Task:** Perform Heap Sort on `{10, 20, 15, 30, 40}`.
+
+* **7:45 PM - 8:30 PM: Queues (Unit 5 - Concepts)**
+    * **Linear Queue:** First In First Out (FIFO). Problem: "Space wastage" (once you delete, you can't reuse space).
+    * **Circular Queue:** Connects End to Start. Solves space wastage.
+    * **Priority Queue:** Elements come out based on "Priority" (like a VIP line), not arrival time. Implemented using Heaps!
+    * **Visual:** 
+
+[Image of Circular Queue diagram]
+
+
+* **8:30 PM - 9:00 PM: Linked Representation of Queue**
+    * **You said you don't know this. Here is the 2-minute lesson:**
+        * It is just a Linked List.
+        * You maintain two pointers: `FRONT` (Head) and `REAR` (Tail).
+        * **Enqueue (Insert):** `Rear->Next = NewNode; Rear = NewNode;`
+        * **Dequeue (Delete):** `Temp = Front; Front = Front->Next; delete Temp;`
+    * **Task:** Draw a linked list with `FRONT` pointing to node 1 and `REAR` pointing to node 3.
+
+---
+
+### 🟣 BLOCK 4: Final Polish (9:30 PM - 10:30 PM)
+
+* **9:30 PM - 10:30 PM: The Algorithm Script**
+    * Don't write C++ code. Write **Algorithms** (English steps).
+    * Practice writing the algorithm for:
+        1.  **Insert into Circular Queue.**
+        2.  **BFS of a Graph.**
+        3.  **Heap Sort Steps.**
